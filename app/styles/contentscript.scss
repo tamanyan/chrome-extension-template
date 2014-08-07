@@ -1,0 +1,8 @@
+$popup_zindex: 100;
+
+div.popup {
+  position: absolute;
+  z-index: $popup_zindex;
+  bottom: auto;
+  display: none;
+}

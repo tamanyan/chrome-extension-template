@@ -1,0 +1,38 @@
+{
+    "name": "extention",
+    "version": "0.0.1",
+    "manifest_version": 2,
+    "description": "template",
+    "icons": {
+        "16": "images/icon-16.png",
+        "128": "images/icon-128.png"
+    },
+    "default_locale": "en",
+    "background": {
+        "scripts": [
+            "scripts/chromereload.js",
+            "scripts/background.js"
+        ]
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://github.com/*",
+            ],
+            "css": [
+                "styles/contentscript.css",
+            ],
+            "js": [
+                "bower_components/jquery/dist/jquery.min.js",
+                "scripts/contentscript.js"
+            ]
+        }
+    ],
+    "permissions": [
+        "tabs",
+        "history",
+        "management",
+        "http://*/*",
+        "https://*/*"
+    ]
+}
