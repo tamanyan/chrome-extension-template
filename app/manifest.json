@@ -1,6 +1,6 @@
 {
     "name": "extention",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "manifest_version": 2,
     "description": "template",
     "icons": {
@@ -17,10 +17,10 @@
     "content_scripts": [
         {
             "matches": [
-                "https://github.com/*",
+                "https://github.com/*"
             ],
             "css": [
-                "styles/contentscript.css",
+                "styles/contentscript.css"
             ],
             "js": [
                 "bower_components/jquery/dist/jquery.min.js",
